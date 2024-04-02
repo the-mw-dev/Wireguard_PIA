@@ -198,7 +198,7 @@ if [[ $VPN_PROTOCOL == "no" ]]; then
   fi
   echo
   echo -e "
-${green}Your IP will be $bestServer_meta_IP\t-     Nexcord
+${green}Your IP will be in the subnet $bestServer_meta_IP\t-     Nexcord
 ${nc}"
 fi
 
