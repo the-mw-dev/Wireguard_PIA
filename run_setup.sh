@@ -38,10 +38,6 @@ intCheck='^[0-9]+$'
 floatCheck='^[0-9]+([.][0-9]+)?$'
 
 # Only allow script to run as root
-if (( EUID != 0 )); then
-  echo -e "${red}This script needs to be run as root. Try again with 'sudo $0'${nc}"
-  exit 1
-fi
 
 # Erase previous authentication token if present
 rm -f /home/container/token/token.nexcord /home/container/token/latencyList.nexcord
