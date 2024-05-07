@@ -53,10 +53,6 @@ if [[ -t 1 ]]; then
 fi
 
 # Only allow script to run as root
-if (( EUID != 0 )); then
-  echo -e "${red}This script needs to be run as root. Try again with 'sudo $0'${nc}"
-  exit 1
-fi
 
 mkdir -p /home/container/token
 
